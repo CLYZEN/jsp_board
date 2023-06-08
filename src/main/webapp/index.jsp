@@ -33,7 +33,7 @@
 			<c:forEach items="${boardList}" var = "b" varStatus="i">
 				<tr>
 					<td>${b.board_no}</td>
-					<td class="title">${b.title}</td>
+					<td class="title"><a href="./view?board_no=${b.board_no}">${b.title}</a></td>
 					<td>${b.user_id}</td>
 					<td>${b.reg_date}</td>
 					<td>${b.views}</td>
@@ -45,11 +45,15 @@
 			<a href="write">글쓰기</a>
 		</div>
 		<div class="board_page">
-			<a href="#" class="bt first">&lt;&lt;</a> <a href="#" class="bt prev">&lt;</a>
-			<a href="#" class="num on">1</a> <a href="#" class="num">2</a> <a
-				href="#" class="num">3</a> <a href="#" class="num">4</a> <a href="#"
-				class="num">5</a> <a href="#" class="bt next">&gt;</a> <a href="#"
-				class="bt last">&gt;&gt;</a>
+			<a href="#" class="bt first">&lt;&lt;</a>
+			 <a href="#" class="bt prev">&lt;</a>
+			<a href="#" class="num on">1</a>
+			 <a href="#" class="num">2</a> 
+			 <a href="#" class="num">3</a>
+			<a href="#" class="num">4</a>
+			<a href="#"class="num">5</a>
+			<a href="#" class="bt next">&gt;</a>
+			 <a href="#" class="bt last">&gt;&gt;</a>
 		</div>
 	</div>
 </body>
