@@ -16,7 +16,8 @@
 			<p>자유게시판 입니다.</p>
 		</div>
 		<div class="board_write_wrap">
-			<form name="frm" method = "post" action ="insert" enctype="multipart/form-data">
+			<form name="frm" method="post" action="insert"
+				enctype="multipart/form-data">
 				<div class="board_write">
 					<div class="title">
 						<dl>
@@ -46,10 +47,10 @@
 				</div>
 			</form>
 			<div class="bt_wrap">
-				<a onclick="chkForm(); return false;" class="on">등록</a> <a href="list">취소</a>
+				<a onclick="chkForm(); return false;" class="on">등록</a> <a
+					href="list">취소</a>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>

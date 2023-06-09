@@ -37,7 +37,8 @@
 					</dl>
 					<dl style="position: absolute; right: 0;">
 						<dt>
-							<a onclick="chkDelete(${board.board_no}); return false;" class="on">삭제하기</a>
+							<a onclick="chkDelete(${board.board_no}); return false;"
+								class="on">삭제하기</a>
 						</dt>
 					</dl>
 				</div>
@@ -47,10 +48,18 @@
 				</div>
 			</div>
 			<div class="bt_wrap">
-				<a href="list" class="on">목록</a> <a href="edit?board_no=${board.board_no}">수정</a>
+				<a href="list" class="on">목록</a> <a
+					href="edit?board_no=${board.board_no}">수정</a>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="./script.js"></script>
+	<script type="text/javascript" src="./script.js">
+		<c:if test="${param.error != null}">
+				alert("${param.error}");
+			</c:if>
+		<c:if test="${error != null}">
+				alert("${error}");
+		</c:if>
+	</script>
 </body>
 </html>
